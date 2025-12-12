@@ -57,7 +57,7 @@ EconomyAPI economy = econPlugin.getEconomyAPI();
 
 ## 🌍 Локализация
 Файлы переводов хранятся в:
-plugins/LineCoEconomy/localizations/
+plugins/LineEco/localizations/
 
 ## 🔌 Использованные библиотеки
 HikariCP - 7.0.2
