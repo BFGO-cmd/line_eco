@@ -27,7 +27,7 @@ config.yml [здесь](https://github.com/BFGO-cmd/line_eco/blob/main/config.ym
 | %lineco_balance_formatted% | Баланс в читаемом виде | 2500 Монет |
 
 ## 🔌 API для разработчиков
-Ваш плагин может взаимодействовать с LineEconomy Economy через EconomyAPI.
+Ваш плагин может взаимодействовать с LineEconomy через EconomyAPI
 
 Получение API:
 ```java
@@ -59,6 +59,11 @@ EconomyAPI economy = econPlugin.getEconomyAPI();
 Файлы переводов хранятся в:
 plugins/LineCoEconomy/localizations/
 
+## 🔌 Использованные библиотеки
+HikariCP - 7.0.2
+SQLite-JDBC - 3.36.0.3
+Annotations - 23.0.0
+MySQL-Connector - 8.0.27
 
 
 
