@@ -31,20 +31,29 @@ config.yml [здесь](https://github.com/BFGO-cmd/line_eco/blob/main/config.ym
 
 Получение API:
 ```java
-LineEco plugin = (LineEco) Bukkit.getPluginManager().getPlugin("LineEco");
-if (plugin != null && plugin.isEnabled()) {
-    EconomyAPI economy = plugin.getEconomyAPI();
-    // Используйте economy.*
-}
+Main econPlugin = (Main) Bukkit.getPluginManager().getPlugin("LineEconomy");
+        if (econPlugin == null || !econPlugin.isEnabled()) {
+            return true;
+        }
+
+EconomyAPI economy = econPlugin.getEconomyAPI();
+        int price = 100;
+        String currency = economy.getCurrencyName();
+
+// Проверка баланса
+        if (!economy.hasBalance(player.getName(), price)) {
+            player.sendMessage("§cНедостаточно " + currency + "! Нужно: " + price);
+            return true;
+        }
 ```
 ### Доступные методы
 | Метод | Описание | Пример |
 | --- | --- | --- |
-| getBalance(String player) | Получить баланс | int bal = api.getBalance("BF"); |
-| addBalance(String player, int amount) | Начислить монеты | api.addBalance("BF", 100); |
-| withdrawBalance(String player, int amount) | Снять монеты (если достаточно) | boolean ok = api.withdrawBalance("BF", 50); |
-| hasBalance(String player, int amount) | Проверить баланс | if (api.hasBalance("BF", 1000)) { ... } |
-| getCurrencyName() | Название валюты | "Монета" |
+| `getBalance(String player)` | Получить баланс | int bal = api.getBalance("BF"); |
+| `addBalance(String player, int amount)` | Начислить монеты | api.addBalance("BF", 100); |
+| `withdrawBalance(String player, int amount)` | Снять монеты (если достаточно) | boolean ok = api.withdrawBalance("BF", 50); |
+| `hasBalance(String player, int amount)` | Проверить баланс | if (api.hasBalance("BF", 1000)) { ... } |
+| `getCurrencyName()` | Название валюты | "Монета" |
 
 ## 🌍 Локализация
 Файлы переводов хранятся в:
