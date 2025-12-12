@@ -27,11 +27,11 @@ config.yml [здесь](https://github.com/BFGO-cmd/line_eco/blob/main/config.ym
 | %lineco_balance_formatted% | Баланс в читаемом виде | 2500 Монет |
 
 ## 🔌 API для разработчиков
-Ваш плагин может взаимодействовать с LineCo Economy через EconomyAPI.
+Ваш плагин может взаимодействовать с LineEconomy Economy через EconomyAPI.
 
 Получение API:
 ```java
-LineCoEconomy plugin = (LineCoEconomy) Bukkit.getPluginManager().getPlugin("LineCoEconomy");
+LineEco plugin = (LineEco) Bukkit.getPluginManager().getPlugin("LineEco");
 if (plugin != null && plugin.isEnabled()) {
     EconomyAPI economy = plugin.getEconomyAPI();
     // Используйте economy.*
