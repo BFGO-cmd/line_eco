@@ -1,0 +1,12 @@
+# Основные сообщения
+command.no-permission: "§cУ вас нет прав для выполнения этой команды!"
+command.invalid-amount: "§cСумма должна быть числом больше 0"
+command.player-not-found: "§cИгрок {player} не найден"
+
+# Команда /addtokens
+addcoins.success: "§aДобавлено {amount} {currency} игроку {player}"
+addcoins.console-success: "Добавлено {amount} {currency} игроку {player}"
+
+# Команда /takemoney
+takecoins.success: "§aСнято {amount} {currency} с игрока {player}"
+takecoins.insufficient-funds: "§cУ игрока {player} недостаточно средств. Баланс: {balance} {currency}"

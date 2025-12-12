@@ -1,0 +1,20 @@
+name: LineEco
+version: 1.0
+main: ru.bfofficial.lineshield.eco.Main
+api-version: 1.21
+softdepend: [PlaceholderAPI]
+author: BF
+commands:
+  addcoins:
+    description: Добавить определённое количество валюты
+    usage: /addcoins <игрок> <количество>
+    permission: eco.addtokens
+  takecoins:
+    description: Забрать определённое количество валюты
+    usage: /takecoins <игрок> <количество>
+    permission: economy.taketokens
+  permissions:
+    economy.addcoins:
+      default: op
+    economy.takecoins:
+      default: op

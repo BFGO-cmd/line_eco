@@ -1,0 +1,33 @@
+#  _     ___ _   _ _____   _____ ____ ___
+# | |   |_ _| \ | | ____| | ____/ ___/ _ \
+# | |    | ||  \| |  _|   |  _|| |  | | | |
+# | |___ | || |\  | |___  | |__| |__| |_| |
+# |_____|___|_| \_|_____| |_____\____\___/
+
+# Версия конфигурации
+config-version: 1.0
+
+#Сплэш сообщение при запуске
+splash-enable: true
+
+# Тип базы данных (SQLITE или MYSQL)
+database-type: "SQLITE"
+
+# Настройки SQLite
+sqlite:
+  file: "data.db"
+
+# Настройки MySQL
+mysql:
+  host: ""
+  port: 3306
+  database: ""
+  username: ""
+  password: ""
+  table: "line_eco"
+
+# Файл локализации
+locale: "ru_RU"
+
+#Настройка имени валюты
+value-name: "Coins"
